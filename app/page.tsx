@@ -474,8 +474,8 @@ export default function HomePage() {
             <Link href="/contact" className="btn-primary !bg-white !text-teal-700 hover:!bg-teal-50 shadow-xl">
               Book an Appointment <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="tel:6042677463" className="btn-outline !border-white/60 !text-white hover:!bg-white/10">
-              <Phone className="w-4 h-4" /> (604) 267-7463
+            <a href="tel:17788618502" className="btn-outline !border-white/60 !text-white hover:!bg-white/10">
+              <Phone className="w-4 h-4" /> +1 (778) 861-8502
             </a>
           </div>
         </div>

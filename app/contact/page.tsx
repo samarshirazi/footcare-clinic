@@ -100,7 +100,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-medium text-slate-800 text-sm mb-0.5">Phone</div>
-                    <a href="tel:6042677463" className="text-slate-500 text-sm hover:text-teal-600 transition-colors">(604) 267-7463</a>
+                    <a href="tel:17788618502" className="text-slate-500 text-sm hover:text-teal-600 transition-colors">+1 (778) 861-8502</a>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -164,7 +164,7 @@ export default function ContactPage() {
                   Thank you, <strong>{form.name}</strong>. We&apos;ll reach out to <strong>{form.email || form.phone}</strong> within one business day to confirm your appointment.
                 </p>
                 <p className="text-sm text-slate-400">
-                  In the meantime, if you have any questions, call us at <a href="tel:6042677463" className="text-teal-600 font-medium">(604) 267-7463</a>.
+                  In the meantime, if you have any questions, call us at <a href="tel:17788618502" className="text-teal-600 font-medium">+1 (778) 861-8502</a>.
                 </p>
                 <button
                   onClick={() => { setFormState('idle'); setForm({ name: '', email: '', phone: '', visitType: 'in-office', service: '', preferredDate: '', message: '' }) }}

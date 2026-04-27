@@ -307,8 +307,8 @@ export default function AboutPage() {
             <Link href="/contact" className="btn-primary">
               Book an Appointment <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="tel:6042677463" className="btn-outline !border-slate-600 !text-slate-300 hover:!border-teal-500 hover:!text-teal-400">
-              <Phone className="w-4 h-4" /> (604) 267-7463
+            <a href="tel:17788618502" className="btn-outline !border-slate-600 !text-slate-300 hover:!border-teal-500 hover:!text-teal-400">
+              <Phone className="w-4 h-4" /> +1 (778) 861-8502
             </a>
           </div>
         </div>

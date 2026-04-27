@@ -71,11 +71,11 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:6042677463"
+            href="tel:17788618502"
             className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${scrolled ? 'text-slate-600 hover:text-teal-600' : 'text-white/90 hover:text-white'}`}
           >
             <Phone className="w-3.5 h-3.5" />
-            (604) 267-7463
+            +1 (778) 861-8502
           </a>
           <Link href="/contact" className="btn-primary text-sm py-2.5">
             Book Now
@@ -110,8 +110,8 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="pt-3 mt-2 border-t border-slate-100 flex flex-col gap-2">
-              <a href="tel:6042677463" className="flex items-center gap-2 px-4 py-3 text-sm text-slate-600">
-                <Phone className="w-4 h-4 text-teal-600" /> (604) 267-7463
+              <a href="tel:17788618502" className="flex items-center gap-2 px-4 py-3 text-sm text-slate-600">
+                <Phone className="w-4 h-4 text-teal-600" /> +1 (778) 861-8502
               </a>
               <Link href="/contact" className="btn-primary justify-center text-sm">
                 Book an Appointment
