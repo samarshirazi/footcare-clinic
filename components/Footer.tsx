@@ -26,7 +26,7 @@ export default function Footer() {
               </svg>
             </div>
             <div>
-              <div className="font-bold text-white text-sm leading-none">StepRight</div>
+              <div className="font-bold text-white text-sm leading-none">Nirvana</div>
               <div className="text-[10px] text-teal-400 font-medium leading-none tracking-wide">FOOT CARE</div>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-teal-500 shrink-0" />
-              <a href="mailto:info@stepright.ca" className="hover:text-teal-400 transition-colors">info@stepright.ca</a>
+              <a href="mailto:info@nirvanafootcare.ca" className="hover:text-teal-400 transition-colors">info@nirvanafootcare.ca</a>
             </li>
           </ul>
 
@@ -114,7 +114,7 @@ export default function Footer() {
 
       <div className="border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-5 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} StepRight Foot Care. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Nirvana Foot Care. All rights reserved.</p>
           <p>Licensed RNs & LPNs · Hospital-grade sterilization · BC, Canada</p>
         </div>
       </div>

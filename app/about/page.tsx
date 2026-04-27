@@ -121,7 +121,7 @@ export default function AboutPage() {
             <Users className="w-3.5 h-3.5" /> Our Team
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-5">
-            About StepRight Foot Care
+            About Nirvana Foot Care
           </h1>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto leading-relaxed">
             We believe everyone deserves professional, clinical-level foot care delivered with compassion. Our team of registered nurses has been caring for Vancouver feet since 2010.
@@ -142,7 +142,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                StepRight Foot Care was founded in 2010 by a group of registered nurses who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
+                Nirvana Foot Care was founded in 2010 by a group of registered nurses who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
               </p>
               <p>
                 Our founders believed that nursing foot care — performed by licensed nurses to clinical standards — was the answer. They established a clinic on West Broadway that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.

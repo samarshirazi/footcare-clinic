@@ -273,7 +273,7 @@ export default function HomePage() {
                 <span className="text-teal-600">Hospital standards.</span>
               </h2>
               <p className="text-slate-500 leading-relaxed mb-8">
-                Unlike beauty salons or spas, StepRight Foot Care is staffed exclusively by licensed nurses who meet the standards of the Lower Mainland Foot Care Nurses Association — clinical training, strict hygiene protocols, and the ability to safely treat complex medical conditions.
+                Unlike beauty salons or spas, Nirvana Foot Care is staffed exclusively by licensed nurses who meet the standards of the Lower Mainland Foot Care Nurses Association — clinical training, strict hygiene protocols, and the ability to safely treat complex medical conditions.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {whyUs.map((w, i) => {

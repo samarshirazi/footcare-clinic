@@ -41,7 +41,7 @@ export default function Navbar() {
           </div>
           <div>
             <div className={`font-bold text-base leading-none transition-colors ${scrolled ? 'text-slate-800' : 'text-white'}`}>
-              StepRight
+              Nirvana
             </div>
             <div className={`text-[10px] font-medium leading-none tracking-wide transition-colors ${scrolled ? 'text-teal-600' : 'text-teal-200'}`}>
               FOOT CARE

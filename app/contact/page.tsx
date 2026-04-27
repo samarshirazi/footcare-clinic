@@ -109,7 +109,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-medium text-slate-800 text-sm mb-0.5">Email</div>
-                    <a href="mailto:info@stepright.ca" className="text-slate-500 text-sm hover:text-teal-600 transition-colors">info@stepright.ca</a>
+                    <a href="mailto:info@nirvanafootcare.ca" className="text-slate-500 text-sm hover:text-teal-600 transition-colors">info@nirvanafootcare.ca</a>
                   </div>
                 </li>
               </ul>
