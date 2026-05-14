@@ -226,8 +226,8 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition bg-white"
                     >
-                      <option value="in-office">In-Office ($75+)</option>
-                      <option value="home-visit">Home Visit ($100+)</option>
+                      <option value="in-office">In-Office</option>
+                      <option value="home-visit">Home Visit</option>
                     </select>
                   </div>
                   <div>

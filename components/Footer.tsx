@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react'
 
 export default function Footer() {
@@ -20,10 +21,14 @@ export default function Footer() {
         {/* Brand */}
         <div className="lg:col-span-1">
           <div className="flex items-center gap-2.5 mb-4">
-            <div className="w-9 h-9 rounded-xl bg-teal-600 flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-5 h-5 text-white fill-current">
-                <path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5.5 4.5 4 4 2.5 4.5C1 5 0 6.5 0.5 8C1 9.5 2 10.5 3 11C3 15 5.5 18 8 19.5C9 20 10 20.5 11 20.8V22h2v-1.2c1-.3 2-.8 3-1.3c2.5-1.5 5-4.5 5-8.5C21 6.5 16.5 2 12 2z"/>
-              </svg>
+            <div className="w-10 h-10 rounded-xl overflow-hidden">
+              <Image
+                src="/logo.png"
+                alt="Nirvana Foot Care logo"
+                width={40}
+                height={40}
+                className="object-cover w-full h-full"
+              />
             </div>
             <div>
               <div className="font-bold text-white text-sm leading-none">Nirvana</div>

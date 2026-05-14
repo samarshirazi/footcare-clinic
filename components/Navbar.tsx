@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Phone, ChevronDown } from 'lucide-react'
 
@@ -34,10 +35,15 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 flex items-center justify-between h-16 md:h-18">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-teal-600 flex items-center justify-center shadow-sm group-hover:bg-teal-700 transition-colors">
-            <svg viewBox="0 0 24 24" className="w-5 h-5 text-white fill-current">
-              <path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5.5 4.5 4 4 2.5 4.5C1 5 0 6.5 0.5 8C1 9.5 2 10.5 3 11C3 15 5.5 18 8 19.5C9 20 10 20.5 11 20.8V22h2v-1.2c1-.3 2-.8 3-1.3c2.5-1.5 5-4.5 5-8.5C21 6.5 16.5 2 12 2z"/>
-            </svg>
+          <div className="w-10 h-10 rounded-xl overflow-hidden shadow-sm">
+            <Image
+              src="/logo.png"
+              alt="Nirvana Foot Care logo"
+              width={40}
+              height={40}
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
           <div>
             <div className={`font-bold text-base leading-none transition-colors ${scrolled ? 'text-slate-800' : 'text-white'}`}>

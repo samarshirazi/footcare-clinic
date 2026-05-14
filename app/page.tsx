@@ -155,19 +155,6 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 via-transparent to-transparent" />
               </div>
 
-              {/* Floating price card */}
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl p-4 flex gap-4">
-                <div className="text-center px-3">
-                  <div className="text-2xl font-extrabold text-teal-600">$75</div>
-                  <div className="text-slate-500 text-xs">In-Office</div>
-                </div>
-                <div className="w-px bg-slate-100" />
-                <div className="text-center px-3">
-                  <div className="text-2xl font-extrabold text-teal-600">$100</div>
-                  <div className="text-slate-500 text-xs">Home Visit</div>
-                </div>
-              </div>
-
               {/* Floating badge */}
               <div className="absolute -top-4 -right-4 bg-teal-600 text-white rounded-2xl shadow-lg px-4 py-2 text-sm font-semibold flex items-center gap-1.5">
                 <Star className="w-3.5 h-3.5 fill-current text-yellow-300" />
@@ -398,32 +385,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Pricing ── */}
+      {/* ── Visit Options ── */}
       <section className="py-20 bg-teal-50">
         <div className="max-w-4xl mx-auto px-5 text-center">
           <div className="reveal">
-            <h2 className="section-heading mb-4">Transparent, Simple Pricing</h2>
+            <h2 className="section-heading mb-4">Visit Options</h2>
             <p className="section-subheading mx-auto mb-10">
-              No hidden fees. Extended health plan reimbursement may apply.
+              Choose what works best for you. Extended health plan reimbursement may apply.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
             {[
               {
-                title: 'In-Office Visit', price: '$75',
+                title: 'In-Office Visit',
                 desc: 'Full medical pedicure at our West Broadway clinic.',
                 features: ['Nail trimming & thinning', 'Callus & corn care', 'Fungal assessment', 'Health history review'],
                 cta: 'Book In-Office', primary: false,
-                // nail polish applied to toenails
                 img: images.nurse1,
               },
               {
-                title: 'Home Visit', price: '$100',
+                title: 'Home Visit',
                 desc: 'We bring the full clinic experience to your home.',
                 features: ['All in-office services', 'Travel to your home', 'Flexible scheduling', 'Ideal for seniors'],
                 cta: 'Book Home Visit', primary: true,
-                // feet close-up
                 img: images.nurse2,
               },
             ].map((p, i) => (
@@ -433,13 +418,9 @@ export default function HomePage() {
                     Popular
                   </div>
                 )}
-                {/* Price card image */}
                 <div className="relative h-32 rounded-xl overflow-hidden mb-5">
                   <Image src={p.img} alt={p.title} fill className="object-cover" sizes="300px" />
-                  <div className="absolute inset-0 bg-teal-900/40" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-3xl font-extrabold text-white drop-shadow-lg">{p.price}</div>
-                  </div>
+                  <div className="absolute inset-0 bg-teal-900/30" />
                 </div>
                 <h3 className="font-bold text-slate-800 text-lg mb-2">{p.title}</h3>
                 <p className="text-sm text-slate-500 mb-4">{p.desc}</p>

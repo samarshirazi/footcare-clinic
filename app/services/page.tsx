@@ -40,7 +40,6 @@ const services = [
     id: 'medical-pedicure',
     icon: Scissors,
     title: 'Medical Pedicures',
-    price: 'from $75',
     badge: 'Most Popular',
     badgeColor: 'bg-teal-600',
     iconColor: 'bg-teal-50 text-teal-600',
@@ -62,7 +61,6 @@ const services = [
     id: 'fungal-nail',
     icon: Shield,
     title: 'Fungal Nail Treatment',
-    price: 'On consultation',
     badge: 'Advanced',
     badgeColor: 'bg-emerald-600',
     iconColor: 'bg-emerald-50 text-emerald-600',
@@ -82,7 +80,6 @@ const services = [
     id: 'ingrown-nail',
     icon: Zap,
     title: 'Ingrown Nail Therapy',
-    price: 'On consultation',
     badge: 'Pain-Free',
     badgeColor: 'bg-violet-600',
     iconColor: 'bg-violet-50 text-violet-600',
@@ -102,7 +99,6 @@ const services = [
     id: 'callus-corn',
     icon: Stethoscope,
     title: 'Callus & Corn Removal',
-    price: 'Included in medical pedicure',
     badge: 'Immediate Relief',
     badgeColor: 'bg-amber-600',
     iconColor: 'bg-amber-50 text-amber-600',
@@ -121,7 +117,6 @@ const services = [
     id: 'diabetic',
     icon: Heart,
     title: 'Diabetic Foot Care',
-    price: 'from $75',
     badge: 'Specialist Care',
     badgeColor: 'bg-rose-600',
     iconColor: 'bg-rose-50 text-rose-500',
@@ -142,7 +137,6 @@ const services = [
     id: 'wart-removal',
     icon: Activity,
     title: 'Wart Removal (Swift)',
-    price: 'On consultation',
     badge: 'Clinically Proven',
     badgeColor: 'bg-sky-600',
     iconColor: 'bg-sky-50 text-sky-600',
@@ -161,7 +155,6 @@ const services = [
     id: 'dry-heel',
     icon: Droplets,
     title: 'Dry & Cracked Heel Care',
-    price: 'Included in medical pedicure',
     badge: 'Soothing Relief',
     badgeColor: 'bg-cyan-600',
     iconColor: 'bg-cyan-50 text-cyan-600',
@@ -180,7 +173,6 @@ const services = [
     id: 'home-visits',
     icon: Home,
     title: 'In-Home Nursing Visits',
-    price: 'from $100',
     badge: 'We Come to You',
     badgeColor: 'bg-indigo-600',
     iconColor: 'bg-indigo-50 text-indigo-600',
@@ -282,7 +274,6 @@ export default function ServicesPage() {
                         </span>
                       )}
                     </div>
-                    <div className="text-teal-600 font-semibold text-sm">{s.price}</div>
                   </div>
                 </div>
 
