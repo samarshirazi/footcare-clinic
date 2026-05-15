@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react'
+import { Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -87,9 +87,8 @@ export default function Footer() {
 
           <h4 className="text-white font-semibold text-sm mt-7 mb-4">Hours</h4>
           <ul className="space-y-1.5 text-sm text-slate-400">
-            <li className="flex items-start gap-2"><Clock className="w-3.5 h-3.5 mt-0.5 text-teal-500 shrink-0" /><span>Tue–Fri: 9:00 AM – 5:00 PM</span></li>
-            <li className="flex items-start gap-2"><Clock className="w-3.5 h-3.5 mt-0.5 text-teal-500 shrink-0" /><span>Sat: 10:00 AM – 3:00 PM</span></li>
-            <li className="pl-5 text-slate-500">Sun–Mon: Closed</li>
+            <li className="flex items-start gap-2"><Clock className="w-3.5 h-3.5 mt-0.5 text-teal-500 shrink-0" /><span>Mon–Fri: 9:00 AM – 5:00 PM</span></li>
+            <li className="pl-5 text-slate-500">Sat–Sun: Closed</li>
           </ul>
         </div>
 
@@ -97,17 +96,13 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold text-sm mb-4">Contact Us</h4>
           <ul className="space-y-4 text-sm text-slate-400">
-            <li className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 text-teal-500 mt-0.5 shrink-0" />
-              <span>2620 West Broadway<br />Vancouver, BC V6K 2G3</span>
-            </li>
             <li className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-teal-500 shrink-0" />
               <a href="tel:17788618502" className="hover:text-teal-400 transition-colors">+1 (778) 861-8502</a>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-teal-500 shrink-0" />
-              <a href="mailto:info@nirvanafootcare.ca" className="hover:text-teal-400 transition-colors">info@nirvanafootcare.ca</a>
+              <a href="mailto:nirvanafootcare@gmail.com" className="hover:text-teal-400 transition-colors">nirvanafootcare@gmail.com</a>
             </li>
           </ul>
 

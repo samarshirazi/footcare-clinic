@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, CheckCircle2, Send, AlertCircle } from 'lucide-react'
+import { Phone, Mail, Clock, CheckCircle2, Send, AlertCircle } from 'lucide-react'
 
 const UNSPLASH = 'https://images.unsplash.com'
 
@@ -87,15 +87,6 @@ export default function ContactPage() {
               <ul className="space-y-5">
                 <li className="flex items-start gap-3">
                   <div className="w-9 h-9 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <div className="font-medium text-slate-800 text-sm mb-0.5">Address</div>
-                    <div className="text-slate-500 text-sm">2620 West Broadway<br />Vancouver, BC V6K 2G3<br /><span className="text-xs text-teal-600">Located inside Foot Solutions</span></div>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
@@ -109,7 +100,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-medium text-slate-800 text-sm mb-0.5">Email</div>
-                    <a href="mailto:info@nirvanafootcare.ca" className="text-slate-500 text-sm hover:text-teal-600 transition-colors">info@nirvanafootcare.ca</a>
+                    <a href="mailto:nirvanafootcare@gmail.com" className="text-slate-500 text-sm hover:text-teal-600 transition-colors">nirvanafootcare@gmail.com</a>
                   </div>
                 </li>
               </ul>
@@ -122,9 +113,8 @@ export default function ContactPage() {
               </h3>
               <ul className="space-y-2.5 text-sm">
                 {[
-                  { day: 'Tuesday – Friday', hours: '9:00 AM – 5:00 PM', open: true },
-                  { day: 'Saturday', hours: '10:00 AM – 3:00 PM', open: true },
-                  { day: 'Sunday – Monday', hours: 'Closed', open: false },
+                  { day: 'Monday – Friday', hours: '9:00 AM – 5:00 PM', open: true },
+                  { day: 'Saturday – Sunday', hours: 'Closed', open: false },
                 ].map(h => (
                   <li key={h.day} className="flex justify-between items-center py-1.5 border-b border-slate-50 last:border-0">
                     <span className="text-slate-600">{h.day}</span>
@@ -313,33 +303,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map placeholder */}
-      <section className="pb-0">
-        <div className="w-full h-64 bg-slate-200 relative overflow-hidden">
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-slate-500">
-            <MapPin className="w-8 h-8 text-teal-500" />
-            <div className="text-sm font-medium">2620 West Broadway, Vancouver, BC</div>
-            <div className="text-xs text-slate-400">Located inside Foot Solutions on West Broadway</div>
-            <a
-              href="https://maps.google.com/?q=2620+West+Broadway+Vancouver+BC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 btn-primary text-sm py-2"
-            >
-              Open in Google Maps
-            </a>
-          </div>
-          {/* Simple grid background to suggest a map */}
-          <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="mapgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#94a3b8" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#mapgrid)" />
-          </svg>
-        </div>
-      </section>
     </>
   )
 }

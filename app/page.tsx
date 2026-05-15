@@ -399,7 +399,7 @@ export default function HomePage() {
             {[
               {
                 title: 'In-Office Visit',
-                desc: 'Full medical pedicure at our West Broadway clinic.',
+                desc: 'Full medical pedicure at our clinic.',
                 features: ['Nail trimming & thinning', 'Callus & corn care', 'Fungal assessment', 'Health history review'],
                 cta: 'Book In-Office', primary: false,
                 img: images.nurse1,

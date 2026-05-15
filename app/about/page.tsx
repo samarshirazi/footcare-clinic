@@ -145,7 +145,7 @@ export default function AboutPage() {
                 Nirvana Foot Care was founded in 2010 by a group of registered nurses who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
               </p>
               <p>
-                Our founders believed that nursing foot care — performed by licensed nurses to clinical standards — was the answer. They established a clinic on West Broadway that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
+                Our founders believed that nursing foot care — performed by licensed nurses to clinical standards — was the answer. They established a clinic that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
               </p>
               <p>
                 Today, we serve thousands of patients across Greater Vancouver, both in our clinic and through our in-home nursing visit program. We continue to invest in the latest technology — from ToeFX fungal treatment to Swift wart removal — to give our patients the most effective options available.
@@ -166,7 +166,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-teal-900/30 to-transparent" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow">
                 <div className="text-teal-700 font-bold text-sm">Established 2010</div>
-                <div className="text-slate-500 text-xs">West Broadway, Vancouver</div>
+                <div className="text-slate-500 text-xs">Vancouver, BC</div>
               </div>
             </div>
           {/* Stats */}
@@ -302,7 +302,7 @@ export default function AboutPage() {
       <section className="py-16 bg-slate-800">
         <div className="max-w-3xl mx-auto px-5 text-center reveal">
           <h2 className="text-3xl font-bold text-white mb-4">Come meet our team</h2>
-          <p className="text-slate-400 mb-8">Book an appointment at our West Broadway clinic or arrange an in-home nursing visit.</p>
+          <p className="text-slate-400 mb-8">Book an appointment at our clinic or arrange an in-home nursing visit.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary">
               Book an Appointment <ArrowRight className="w-4 h-4" />
