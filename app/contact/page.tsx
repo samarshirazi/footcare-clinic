@@ -25,8 +25,7 @@ export default function ContactPage() {
 
   const [formState, setFormState] = useState<FormState>('idle')
   const [form, setForm] = useState({
-    name: '', email: '', phone: '', visitType: 'in-office',
-    service: '', preferredDate: '', message: '',
+    name: '', email: '', phone: '', message: '',
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -157,7 +156,7 @@ export default function ContactPage() {
                   In the meantime, if you have any questions, call us at <a href="tel:17788618502" className="text-teal-600 font-medium">+1 (778) 861-8502</a>.
                 </p>
                 <button
-                  onClick={() => { setFormState('idle'); setForm({ name: '', email: '', phone: '', visitType: 'in-office', service: '', preferredDate: '', message: '' }) }}
+                  onClick={() => { setFormState('idle'); setForm({ name: '', email: '', phone: '', message: '' }) }}
                   className="btn-outline mt-2"
                 >
                   Book Another Appointment
@@ -202,52 +201,6 @@ export default function ContactPage() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="jane@example.com"
-                    className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition"
-                  />
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-5 mb-5">
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1.5">Visit Type *</label>
-                    <select
-                      name="visitType"
-                      required
-                      value={form.visitType}
-                      onChange={handleChange}
-                      className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition bg-white"
-                    >
-                      <option value="in-office">In-Office</option>
-                      <option value="home-visit">Home Visit</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1.5">Service Needed</label>
-                    <select
-                      name="service"
-                      value={form.service}
-                      onChange={handleChange}
-                      className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition bg-white"
-                    >
-                      <option value="">Select a service...</option>
-                      <option value="medical-pedicure">Medical Pedicure</option>
-                      <option value="fungal-nail">Fungal Nail Treatment (ToeFX)</option>
-                      <option value="ingrown-nail">Ingrown Nail (Onyfix)</option>
-                      <option value="callus-corn">Callus & Corn Removal</option>
-                      <option value="diabetic">Diabetic Foot Care</option>
-                      <option value="dry-heel">Dry Heel Care</option>
-                      <option value="not-sure">Not Sure — Need Assessment</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="mb-5">
-                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Preferred Date / Time</label>
-                  <input
-                    type="text"
-                    name="preferredDate"
-                    value={form.preferredDate}
-                    onChange={handleChange}
-                    placeholder="e.g. Wednesday afternoon, or any weekday morning"
                     className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition"
                   />
                 </div>
