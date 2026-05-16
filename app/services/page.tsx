@@ -42,9 +42,8 @@ const services = [
     badge: 'Most Popular',
     badgeColor: 'bg-teal-600',
     iconColor: 'bg-teal-50 text-teal-600',
-    desc: 'Our medical pedicure is the cornerstone of what we do — a comprehensive clinical foot care appointment carried out in a sterile environment by a nurse. Unlike salon pedicures, there is no cosmetic nail polish. Every procedure focuses on health outcomes.',
+    desc: 'Clinical foot care appointment carried out in a sterile environment by a nurse. Unlike salon pedicures, there is no cosmetic nail polish. Every procedure focuses on health outcomes.',
     includes: [
-      'Complete health history review',
       'Visual and tactile foot assessment',
       'Professional nail trimming and filing',
       'Thick nail reduction and thinning',
@@ -63,10 +62,9 @@ const services = [
     badge: 'Advanced',
     badgeColor: 'bg-emerald-600',
     iconColor: 'bg-emerald-50 text-emerald-600',
-    desc: 'Fungal nail infections (onychomycosis) are common and can be persistent without proper treatment. We offer ToeFX — a clinically proven, pain-free laser system that targets the fungus beneath the nail, combined with topical antifungal protocols for optimal results.',
+    desc: 'Fungal nail infections (onychomycosis) are common and can be persistent without proper treatment. Topical antifungal protocols for optimal results.',
     includes: [
       'Nail and skin fungal assessment',
-      'ToeFX laser therapy sessions',
       'Nail debridement and prep',
       'Topical antifungal recommendations',
       'Before & after documentation',
