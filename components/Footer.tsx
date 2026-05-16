@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed mb-4">
-            Expert medical foot care by nurses. Hospital-grade sterilization, no referral required.
+            Expert medical foot care by a nurse. Hospital-grade sterilization, no referral required.
           </p>
           <div className="flex gap-3">
             <a href="#" className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-teal-600 flex items-center justify-center transition-colors">

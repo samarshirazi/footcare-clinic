@@ -80,17 +80,15 @@ const services = [
     badge: 'Pain-Free',
     badgeColor: 'bg-violet-600',
     iconColor: 'bg-violet-50 text-violet-600',
-    desc: 'The Onyfix nail bracing system is a non-surgical, pain-free solution to ingrown nails. A thin composite strip is bonded to the nail surface and gently applies continuous corrective pressure to reshape the nail as it grows — eliminating the need for cutting or surgery.',
+    desc: 'A gentle, non-surgical approach to relieving ingrown toenails — easing pressure on the painful nail edge and supporting the nail to grow back in a healthy shape.',
     includes: [
       'Ingrown nail assessment',
-      'Onyfix nail brace application',
       'Edge removal where needed',
       'Pain relief immediate on application',
       'Follow-up monitoring visits',
       'Patient education on nail hygiene',
-      'NEC nail reconstruction (if applicable)',
     ],
-    note: 'The Onyfix brace is safe, invisible, and can be worn with normal footwear.',
+    note: 'Most patients feel immediate relief. Treatment is suitable for everyday activity and normal footwear.',
   },
   {
     id: 'callus-corn',
@@ -99,11 +97,10 @@ const services = [
     badge: 'Immediate Relief',
     badgeColor: 'bg-amber-600',
     iconColor: 'bg-amber-50 text-amber-600',
-    desc: 'Calluses and corns form when skin is subjected to repeated pressure or friction. Our nurses use sterile, professional-grade instruments to safely and painlessly reduce hardened skin — providing immediate relief and preventing further build-up.',
+    desc: 'Calluses and corns form when skin is subjected to repeated pressure or friction. We safely remove corns and calluses using sterile, professional-grade instruments — providing immediate relief and preventing further build-up.',
     includes: [
       'Assessment of pressure points',
-      'Sterile scalpel debridement',
-      'Pumice finishing',
+      'Sterile debridement',
       'Moisturizing treatment',
       'Footwear and padding advice',
       'Referral to orthotics if needed',
@@ -117,7 +114,7 @@ const services = [
     badge: 'Specialist Care',
     badgeColor: 'bg-rose-600',
     iconColor: 'bg-rose-50 text-rose-500',
-    desc: 'People with diabetes face a significantly higher risk of foot complications including neuropathy, poor circulation, ulcers, and infection. Our nurses have specialized training in diabetic foot assessment and care, following evidence-based protocols to prevent serious complications.',
+    desc: 'People with diabetes face a significantly higher risk of foot complications including neuropathy, poor circulation, ulcers, and infection. Our nurse has specialized training in diabetic foot assessment and care, following evidence-based protocols to prevent serious complications.',
     includes: [
       'ABPI circulatory screening test',
       'Neuropathy assessment',
@@ -137,7 +134,7 @@ const services = [
     badge: 'Soothing Relief',
     badgeColor: 'bg-cyan-600',
     iconColor: 'bg-cyan-50 text-cyan-600',
-    desc: 'Cracked heels can progress from a cosmetic concern to a painful, infection-prone condition. Our nurses carefully debride thickened heel skin, apply professional-strength moisturizers, and provide guidance on preventing recurrence.',
+    desc: 'Cracked heels can progress from a cosmetic concern to a painful, infection-prone condition. Our nurse carefully debrides thickened heel skin, applies professional-strength moisturizers, and provides guidance on preventing recurrence.',
     includes: [
       'Heel and sole assessment',
       'Debridement of thick/dry skin',
@@ -288,7 +285,7 @@ export default function ServicesPage() {
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Extended Health Plan Coverage</h3>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Many extended health benefit plans include coverage for nursing foot care services. Since our practitioners are licensed nurses (RNs and LPNs), our services may qualify for reimbursement under nursing care benefits. We recommend checking with your benefits provider before your appointment.
+                Many extended health benefit plans include coverage for nursing foot care services. Since our practitioner is a licensed nurse (RN or LPN), our services may qualify for reimbursement under nursing care benefits. We recommend checking with your benefits provider before your appointment.
               </p>
               <p className="text-sm text-slate-500">
                 We can provide detailed receipts for insurance claims. A referral from your doctor is <strong>not required</strong> to book with us, but may help with certain insurance submissions.

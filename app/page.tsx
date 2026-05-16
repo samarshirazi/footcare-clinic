@@ -61,12 +61,12 @@ const services = [
 const stats = [
   { value: '15+',    label: 'Years of Experience' },
   { value: '3,000+', label: 'Patients Served' },
-  { value: '100%',   label: 'Licensed Nurses' },
+  { value: '100%',   label: 'Licensed Nurse' },
   { value: '5★',     label: 'Patient Rating' },
 ]
 
 const whyUs = [
-  { icon: Award,       title: 'Nurses Only',      desc: 'Every treatment is performed by licensed RNs or LPNs with specialized foot care training — not estheticians.' },
+  { icon: Award,       title: 'Nurse Only',       desc: 'Every treatment is performed by a licensed RN or LPN with specialized foot care training — not an esthetician.' },
   { icon: Shield,      title: 'Hospital-Grade Sterilization', desc: 'We autoclave all instruments between every patient — the same standard used in hospitals.' },
   { icon: Stethoscope, title: 'No Referral Required',         desc: 'Book directly with us. Most extended health plans cover our services.' },
   { icon: Heart,       title: 'Safe for Complex Conditions',  desc: 'Trained to care for patients with diabetes, poor circulation, arthritis, and other health conditions.' },
@@ -79,7 +79,7 @@ const steps = [
 ]
 
 const testimonials = [
-  { name: 'Margaret T.', role: 'Diabetic patient, 68', text: 'As a diabetic, I was nervous about foot care. The nurses were thorough, gentle, and explained everything. My feet have never felt better.', stars: 5, avatar: P(17056222, 120, 120) },
+  { name: 'Margaret T.', role: 'Diabetic patient, 68', text: 'As a diabetic, I was nervous about foot care. The nurse was thorough, gentle, and explained everything. My feet have never felt better.', stars: 5, avatar: P(17056222, 120, 120) },
   { name: 'David K.',    role: 'Home visit patient',    text: "The home visit service is incredible. My elderly mother can't travel easily, and they came to us fully equipped. Professional and caring.",    stars: 5, avatar: P(6628700,  120, 120) },
   { name: 'Sandra L.',   role: 'Regular patient',        text: "I've had painful calluses for years. One appointment and the difference was night and day. The nurse-level care is so reassuring.",           stars: 5, avatar: P(8600448,  120, 120) },
 ]
@@ -109,7 +109,7 @@ export default function HomePage() {
           <div>
             <div className="badge mb-6 !text-teal-100 !bg-teal-700/60 !border-teal-500/50">
               <Award className="w-3.5 h-3.5" />
-              Licensed Nurses · Vancouver, BC
+              Licensed Nurse · Vancouver, BC
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -118,7 +118,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg text-teal-100 leading-relaxed mb-8 max-w-lg">
-              Expert medical foot care delivered by nurses using hospital-grade sterilization. No referral needed — results from the very first visit.
+              Expert medical foot care delivered by a nurse using hospital-grade sterilization. No referral needed — results from the very first visit.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
@@ -184,7 +184,7 @@ export default function HomePage() {
             <div className="badge mb-4 mx-auto"><Scissors className="w-3.5 h-3.5" /> Our Services</div>
             <h2 className="section-heading">Comprehensive Foot Care</h2>
             <p className="section-subheading mx-auto">
-              From routine nail care to advanced fungal treatments — all performed by nurses with clinical precision.
+              From routine nail care to advanced fungal treatments — all performed by a nurse with clinical precision.
             </p>
           </div>
 
@@ -260,7 +260,7 @@ export default function HomePage() {
                 <span className="text-teal-600">Hospital standards.</span>
               </h2>
               <p className="text-slate-500 leading-relaxed mb-8">
-                Unlike beauty salons or spas, Nirvana Foot Care is staffed exclusively by licensed nurses who meet the standards of the Lower Mainland Foot Care Nurses Association — clinical training, strict hygiene protocols, and the ability to safely treat complex medical conditions.
+                Unlike beauty salons or spas, Nirvana Foot Care is staffed exclusively by a licensed nurse who meets the standards of the Lower Mainland Foot Care Nurses Association — clinical training, strict hygiene protocols, and the ability to safely treat complex medical conditions.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {whyUs.map((w, i) => {

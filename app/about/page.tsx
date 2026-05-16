@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Award, CheckCircle2, Heart, Shield, Users, BookOpen, Phone } from 'lucide-react'
+import { ArrowRight, Award, CheckCircle2, Heart, Shield, BookOpen, Phone } from 'lucide-react'
 
 // Pexels foot-care specific images (free, no copyright)
 const P = (id: number, w = 400, h = 300) =>
@@ -22,39 +22,6 @@ function useReveal() {
   }, [])
 }
 
-const team = [
-  {
-    name: 'Jennifer Marlowe, RN',
-    role: 'Lead Foot Care Nurse',
-    years: '14 years',
-    bio: 'Jennifer holds an RN designation and has completed advanced foot care education through the Lower Mainland Foot Care Nurses Association. She specializes in diabetic foot management and fungal nail treatment.',
-    specialties: ['Diabetic Foot Care', 'Fungal Nail (ToeFX)', 'ABPI Circulatory Testing'],
-    initial: 'J',
-    color: 'bg-teal-600',
-    img: P(17056222, 400, 300), // close-up pedicure treatment
-  },
-  {
-    name: 'Patricia Soh, LPN',
-    role: 'Foot Care Nurse',
-    years: '8 years',
-    bio: 'Patricia is a Licensed Practical Nurse with specialized training in ingrown nail correction and advanced foot care. She is certified in Onyfix nail bracing.',
-    specialties: ['Onyfix Nail Bracing', 'Ingrown Nail Correction', 'Callus & Corn Care'],
-    initial: 'P',
-    color: 'bg-emerald-600',
-    img: P(7755212, 400, 300), // nail file treatment
-  },
-  {
-    name: 'Grace Okafor, RN',
-    role: 'Community Foot Care Nurse',
-    years: '6 years',
-    bio: 'Grace leads our in-home nursing visit program, specializing in care for seniors and patients with mobility challenges. She has extensive experience in long-term care settings.',
-    specialties: ['In-Home Nursing Visits', 'Senior Foot Care', 'Long-Term Care'],
-    initial: 'G',
-    color: 'bg-violet-600',
-    img: P(6628700, 400, 300), // foot massage treatment
-  },
-]
-
 const values = [
   {
     icon: Shield,
@@ -69,20 +36,20 @@ const values = [
   {
     icon: BookOpen,
     title: 'Continuing Education',
-    desc: 'Our nurses stay current with the latest foot care techniques, technology, and evidence-based practices through ongoing training and professional development.',
+    desc: 'Our nurse stays current with the latest foot care techniques, technology, and evidence-based practices through ongoing training and professional development.',
   },
   {
     icon: Award,
     title: 'Professional Standards',
-    desc: 'All practitioners are registered with their respective nursing colleges and meet the standards set by the Lower Mainland Foot Care Nurses Association.',
+    desc: 'Our nurse is registered with the BC College of Nurses and Midwives and meets the standards set by the Lower Mainland Foot Care Nurses Association.',
   },
 ]
 
 const credentials = [
-  'Nurses (RN) — BC College of Nurses and Midwives',
-  'Licensed Practical Nurses (LPN) — BC College of Nurses and Midwives',
+  'Nurse (RN) — BC College of Nurses and Midwives',
+  'Licensed Practical Nurse (LPN) — BC College of Nurses and Midwives',
   'Certified in Advanced Foot Care Nursing',
-  'Lower Mainland Foot Care Nurses Association members',
+  'Lower Mainland Foot Care Nurses Association member',
   'ToeFX Certified Practitioners',
   'Onyfix Certified Applicators',
   'ABPI Circulatory Testing Trained',
@@ -117,13 +84,13 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-5 text-center">
           <div className="badge mb-5 mx-auto !text-teal-100 !bg-teal-700/60 !border-teal-500/50">
-            <Users className="w-3.5 h-3.5" /> Our Team
+            <Heart className="w-3.5 h-3.5" /> About Us
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-5">
             About Nirvana Foot Care
           </h1>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Our team of nurses has been caring for Vancouver feet since 2010.
+            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Our nurse has been caring for Vancouver feet since 2010.
           </p>
         </div>
       </section>
@@ -136,15 +103,15 @@ export default function AboutPage() {
               <Heart className="w-3.5 h-3.5" /> Our Story
             </div>
             <h2 className="section-heading mb-5">
-              Founded by nurses,<br />
+              Founded by a nurse,<br />
               <span className="text-teal-600">for every patient.</span>
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                Nirvana Foot Care was founded in 2010 by a group of nurses who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
+                Nirvana Foot Care was founded in 2010 by a nurse who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
               </p>
               <p>
-                Our founders believed that nursing foot care — performed by licensed nurses to clinical standards — was the answer. They established a clinic that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
+                Our founders believed that nursing foot care — performed by a licensed nurse to clinical standards — was the answer. They established a clinic that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
               </p>
               <p>
                 Today, we serve thousands of patients across Greater Vancouver, both in our clinic and through our in-home nursing visit program. We continue to invest in the latest technology — including ToeFX fungal treatment and Onyfix nail bracing — to give our patients the most effective options available.
@@ -186,60 +153,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-5">
-          <div className="text-center mb-14 reveal">
-            <div className="badge mb-4 mx-auto">
-              <Users className="w-3.5 h-3.5" /> Meet the Team
-            </div>
-            <h2 className="section-heading">Your Care Team</h2>
-            <p className="section-subheading mx-auto">
-              Every member of our team is a licensed nurse with specialized foot care training. You&apos;re always in safe, qualified hands.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-7">
-            {team.map((m, i) => (
-              <div
-                key={i}
-                className="card overflow-hidden reveal"
-                style={{ transitionDelay: `${i * 0.1}s` }}
-              >
-                {/* Team member photo */}
-                <div className="relative h-52 overflow-hidden">
-                  <Image
-                    src={m.img}
-                    alt={m.name}
-                    fill
-                    className="object-cover object-top"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                </div>
-                <div className="p-6">
-                <div className={`w-16 h-16 rounded-2xl ${m.color} text-white text-2xl font-bold items-center justify-center mb-5 hidden`}>
-                  {m.initial}
-                </div>
-                <h3 className="font-bold text-slate-800 text-base">{m.name}</h3>
-                <div className="text-teal-600 text-sm font-medium mb-1">{m.role}</div>
-                <div className="text-slate-400 text-xs mb-4">{m.years} experience</div>
-                <p className="text-sm text-slate-500 leading-relaxed mb-4">{m.bio}</p>
-                <div className="space-y-1.5">
-                  {m.specialties.map(sp => (
-                    <div key={sp} className="flex items-center gap-2 text-xs text-slate-600">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-teal-500 shrink-0" />
-                      {sp}
-                    </div>
-                  ))}
-                </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Values */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-5">
@@ -274,7 +187,7 @@ export default function AboutPage() {
             </div>
             <h2 className="section-heading">Fully Qualified & Certified</h2>
             <p className="section-subheading mx-auto">
-              Our practitioners maintain active registration with the BC College of Nurses and Midwives and hold additional certifications in advanced foot care techniques.
+              Our nurse maintains active registration with the BC College of Nurses and Midwives and holds additional certifications in advanced foot care techniques.
             </p>
           </div>
 
@@ -291,7 +204,7 @@ export default function AboutPage() {
 
           <div className="mt-8 p-5 bg-white border border-teal-100 rounded-2xl reveal">
             <p className="text-sm text-slate-600 text-center leading-relaxed">
-              <span className="font-semibold text-teal-700">Lower Mainland Foot Care Nurses Association</span> — All our nurses meet the professional standards, ethical code, and best practice guidelines set by this association. We are committed to the advancement of nursing foot care in British Columbia.
+              <span className="font-semibold text-teal-700">Lower Mainland Foot Care Nurses Association</span> — Our nurse meets the professional standards, ethical code, and best practice guidelines set by this association. We are committed to the advancement of nursing foot care in British Columbia.
             </p>
           </div>
         </div>
@@ -300,7 +213,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-16 bg-slate-800">
         <div className="max-w-3xl mx-auto px-5 text-center reveal">
-          <h2 className="text-3xl font-bold text-white mb-4">Come meet our team</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Come meet our nurse</h2>
           <p className="text-slate-400 mb-8">Book an appointment at our clinic or arrange an in-home nursing visit.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary">
