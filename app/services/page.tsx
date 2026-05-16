@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   ArrowRight, CheckCircle2, Scissors, Shield, Heart,
-  Stethoscope, Zap, Home, Droplets, Activity, Star, Phone
+  Stethoscope, Zap, Home, Droplets, Star, Phone
 } from 'lucide-react'
 
 // All foot-care specific images from Pexels (free, no copyright)
@@ -18,7 +18,6 @@ const serviceImages: Record<string, string> = {
   'ingrown-nail':     P(7755212),  // person getting nail file treatment
   'callus-corn':      P(4963838),  // close-up woman's feet (pedicured)
   'diabetic':         P(8600448),  // applying cream/care to foot
-  'wart-removal':     P(1076584),  // close-up hands and feet
   'dry-heel':         P(8600448),  // foot cream treatment
   'home-visits':      P(6628700),  // person having a foot massage
 }
@@ -43,7 +42,7 @@ const services = [
     badge: 'Most Popular',
     badgeColor: 'bg-teal-600',
     iconColor: 'bg-teal-50 text-teal-600',
-    desc: 'Our medical pedicure is the cornerstone of what we do — a comprehensive clinical foot care appointment carried out in a sterile environment by a registered nurse. Unlike salon pedicures, there is no cosmetic nail polish. Every procedure focuses on health outcomes.',
+    desc: 'Our medical pedicure is the cornerstone of what we do — a comprehensive clinical foot care appointment carried out in a sterile environment by a nurse. Unlike salon pedicures, there is no cosmetic nail polish. Every procedure focuses on health outcomes.',
     includes: [
       'Complete health history review',
       'Visual and tactile foot assessment',
@@ -134,24 +133,6 @@ const services = [
     note: 'Our care is recognized as an integral part of diabetes management. May be covered by extended health plans.',
   },
   {
-    id: 'wart-removal',
-    icon: Activity,
-    title: 'Wart Removal (Swift)',
-    badge: 'Clinically Proven',
-    badgeColor: 'bg-sky-600',
-    iconColor: 'bg-sky-50 text-sky-600',
-    desc: 'Swift is a microwave therapy device cleared for the treatment of plantar warts (verrucas). It delivers precisely controlled microwave energy to infected tissue, stimulating the immune system to clear the HPV virus. Most cases resolve in 3–4 sessions.',
-    includes: [
-      'Wart assessment and diagnosis',
-      'Swift microwave therapy application',
-      'No dressings or aftercare required',
-      'No downtime — walk out normally',
-      'Multiple sessions if required',
-      'Significant cure rates vs. traditional methods',
-    ],
-    note: 'Swift is clinically proven with high cure rates. No cutting, no acids, no freezing.',
-  },
-  {
     id: 'dry-heel',
     icon: Droplets,
     title: 'Dry & Cracked Heel Care',
@@ -224,7 +205,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            Every service is performed by a registered nurse using hospital-grade sterilized instruments. From routine maintenance to advanced treatments — we cover everything your feet need.
+            Every service is performed by a nurse using hospital-grade sterilized instruments. From routine maintenance to advanced treatments — we cover everything your feet need.
           </p>
         </div>
       </section>

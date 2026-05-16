@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-400 text-sm leading-relaxed mb-4">
-            Expert medical foot care by registered nurses. Hospital-grade sterilization, no referral required.
+            Expert medical foot care by nurses. Hospital-grade sterilization, no referral required.
           </p>
           <div className="flex gap-3">
             <a href="#" className="w-8 h-8 rounded-lg bg-slate-800 hover:bg-teal-600 flex items-center justify-center transition-colors">
@@ -53,13 +53,12 @@ export default function Footer() {
           <h4 className="text-white font-semibold text-sm mb-4">Services</h4>
           <ul className="space-y-2.5 text-sm">
             {[
-              'Medical Pedicures',
+              'Medical Footcare',
               'Nail Care & Thinning',
               'Callus & Corn Removal',
               'Fungal Nail Treatment',
               'Ingrown Nail Therapy',
               'Diabetic Foot Care',
-              'Wart Removal',
               'Home Visits',
             ].map(s => (
               <li key={s}>

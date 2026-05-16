@@ -37,8 +37,8 @@ const team = [
     name: 'Patricia Soh, LPN',
     role: 'Foot Care Nurse',
     years: '8 years',
-    bio: 'Patricia is a Licensed Practical Nurse with specialized training in ingrown nail correction and wart removal. She is certified in Onyfix nail bracing and Swift microwave therapy.',
-    specialties: ['Onyfix Nail Bracing', 'Swift Wart Removal', 'Callus & Corn Care'],
+    bio: 'Patricia is a Licensed Practical Nurse with specialized training in ingrown nail correction and advanced foot care. She is certified in Onyfix nail bracing.',
+    specialties: ['Onyfix Nail Bracing', 'Ingrown Nail Correction', 'Callus & Corn Care'],
     initial: 'P',
     color: 'bg-emerald-600',
     img: P(7755212, 400, 300), // nail file treatment
@@ -79,13 +79,12 @@ const values = [
 ]
 
 const credentials = [
-  'Registered Nurses (RN) — BC College of Nurses and Midwives',
+  'Nurses (RN) — BC College of Nurses and Midwives',
   'Licensed Practical Nurses (LPN) — BC College of Nurses and Midwives',
   'Certified in Advanced Foot Care Nursing',
   'Lower Mainland Foot Care Nurses Association members',
   'ToeFX Certified Practitioners',
   'Onyfix Certified Applicators',
-  'Swift Therapy Certified Providers',
   'ABPI Circulatory Testing Trained',
 ]
 
@@ -124,7 +123,7 @@ export default function AboutPage() {
             About Nirvana Foot Care
           </h1>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Our team of registered nurses has been caring for Vancouver feet since 2010.
+            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Our team of nurses has been caring for Vancouver feet since 2010.
           </p>
         </div>
       </section>
@@ -142,13 +141,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                Nirvana Foot Care was founded in 2010 by a group of registered nurses who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
+                Nirvana Foot Care was founded in 2010 by a group of nurses who saw a gap in the community: patients with diabetes, circulation problems, and mobility challenges were struggling to access safe, professional foot care. Salon pedicures posed real health risks, and seeing a podiatrist for routine nail and skin maintenance felt like overkill.
               </p>
               <p>
                 Our founders believed that nursing foot care — performed by licensed nurses to clinical standards — was the answer. They established a clinic that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
               </p>
               <p>
-                Today, we serve thousands of patients across Greater Vancouver, both in our clinic and through our in-home nursing visit program. We continue to invest in the latest technology — from ToeFX fungal treatment to Swift wart removal — to give our patients the most effective options available.
+                Today, we serve thousands of patients across Greater Vancouver, both in our clinic and through our in-home nursing visit program. We continue to invest in the latest technology — including ToeFX fungal treatment and Onyfix nail bracing — to give our patients the most effective options available.
               </p>
             </div>
           </div>

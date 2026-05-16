@@ -66,7 +66,7 @@ const stats = [
 ]
 
 const whyUs = [
-  { icon: Award,       title: 'Registered Nurses Only',      desc: 'Every treatment is performed by licensed RNs or LPNs with specialized foot care training — not estheticians.' },
+  { icon: Award,       title: 'Nurses Only',      desc: 'Every treatment is performed by licensed RNs or LPNs with specialized foot care training — not estheticians.' },
   { icon: Shield,      title: 'Hospital-Grade Sterilization', desc: 'We autoclave all instruments between every patient — the same standard used in hospitals.' },
   { icon: Stethoscope, title: 'No Referral Required',         desc: 'Book directly with us. Most extended health plans cover our services.' },
   { icon: Heart,       title: 'Safe for Complex Conditions',  desc: 'Trained to care for patients with diabetes, poor circulation, arthritis, and other health conditions.' },
@@ -109,7 +109,7 @@ export default function HomePage() {
           <div>
             <div className="badge mb-6 !text-teal-100 !bg-teal-700/60 !border-teal-500/50">
               <Award className="w-3.5 h-3.5" />
-              Licensed Registered Nurses · Vancouver, BC
+              Licensed Nurses · Vancouver, BC
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -118,7 +118,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg text-teal-100 leading-relaxed mb-8 max-w-lg">
-              Expert medical foot care delivered by registered nurses using hospital-grade sterilization. No referral needed — results from the very first visit.
+              Expert medical foot care delivered by nurses using hospital-grade sterilization. No referral needed — results from the very first visit.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
@@ -184,7 +184,7 @@ export default function HomePage() {
             <div className="badge mb-4 mx-auto"><Scissors className="w-3.5 h-3.5" /> Our Services</div>
             <h2 className="section-heading">Comprehensive Foot Care</h2>
             <p className="section-subheading mx-auto">
-              From routine nail care to advanced fungal treatments — all performed by registered nurses with clinical precision.
+              From routine nail care to advanced fungal treatments — all performed by nurses with clinical precision.
             </p>
           </div>
 
@@ -324,7 +324,7 @@ export default function HomePage() {
               </p>
               <div className="grid grid-cols-2 gap-2">
                 {['Diabetes', 'Poor Circulation', 'Arthritis', 'Neuropathy', 'Bunions', 'Hammertoes',
-                  'Fungal Nails', 'Ingrown Nails', 'Plantar Warts', 'Corns & Calluses',
+                  'Fungal Nails', 'Ingrown Nails', 'Corns & Calluses',
                   'Dry/Cracked Heels', 'Thickened Nails'].map(c => (
                   <div key={c} className="flex items-center gap-2 text-sm text-slate-600 py-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-teal-500 shrink-0" />{c}

@@ -234,7 +234,6 @@ export default function ContactPage() {
                       <option value="ingrown-nail">Ingrown Nail (Onyfix)</option>
                       <option value="callus-corn">Callus & Corn Removal</option>
                       <option value="diabetic">Diabetic Foot Care</option>
-                      <option value="wart-removal">Wart Removal (Swift)</option>
                       <option value="dry-heel">Dry Heel Care</option>
                       <option value="not-sure">Not Sure — Need Assessment</option>
                     </select>
