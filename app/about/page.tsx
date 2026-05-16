@@ -46,8 +46,8 @@ const values = [
 ]
 
 const credentials = [
-  'Nurse (RN) — BC College of Nurses and Midwives',
-  'Licensed Practical Nurse (LPN) — BC College of Nurses and Midwives',
+  'Nurse — BC College of Nurses and Midwives',
+  'Licensed Practical Nurse — BC College of Nurses and Midwives',
   'Certified in Advanced Foot Care Nursing',
   'Lower Mainland Foot Care Nurses Association member',
   'ToeFX Certified Practitioners',
@@ -141,7 +141,7 @@ export default function AboutPage() {
               { val: '2010', label: 'Year Founded', color: 'bg-teal-600' },
               { val: '3,000+', label: 'Patients Served', color: 'bg-emerald-600' },
               { val: '15+', label: 'Years of Experience', color: 'bg-violet-600' },
-              { val: '100%', label: 'RN/LPN Staffed', color: 'bg-amber-600' },
+              { val: '100%', label: 'Licensed Nurse', color: 'bg-amber-600' },
             ].map((s, i) => (
               <div key={i} className={`${s.color} rounded-2xl p-6 text-white`}>
                 <div className="text-3xl font-extrabold mb-1">{s.val}</div>

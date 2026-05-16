@@ -66,7 +66,7 @@ const stats = [
 ]
 
 const whyUs = [
-  { icon: Award,       title: 'Nurse Only',       desc: 'Every treatment is performed by a licensed RN or LPN with specialized foot care training — not an esthetician.' },
+  { icon: Award,       title: 'Nurse Only',       desc: 'Every treatment is performed by a licensed nurse with specialized foot care training — not an esthetician.' },
   { icon: Shield,      title: 'Hospital-Grade Sterilization', desc: 'We autoclave all instruments between every patient — the same standard used in hospitals.' },
   { icon: Stethoscope, title: 'No Referral Required',         desc: 'Book directly with us. Most extended health plans cover our services.' },
   { icon: Heart,       title: 'Safe for Complex Conditions',  desc: 'Trained to care for patients with diabetes, poor circulation, arthritis, and other health conditions.' },
