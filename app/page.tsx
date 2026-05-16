@@ -73,7 +73,7 @@ const whyUs = [
 ]
 
 const steps = [
-  { num: '01', title: 'Book Online or Call',      desc: 'Schedule an in-office visit or home visit at a time that works for you.' },
+  { num: '01', title: 'Book Online or Call',      desc: 'Schedule a home visit at a time that works for you.' },
   { num: '02', title: 'Assessment & Care Plan',   desc: 'Your nurse reviews your health history and designs a personalized foot care plan.' },
   { num: '03', title: 'Expert Treatment',         desc: 'Receive professional care with sterile instruments in a comfortable, clinical setting.' },
 ]
@@ -385,57 +385,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Visit Options ── */}
+      {/* ── Home Visits ── */}
       <section className="py-20 bg-teal-50">
         <div className="max-w-4xl mx-auto px-5 text-center">
           <div className="reveal">
-            <h2 className="section-heading mb-4">Visit Options</h2>
+            <h2 className="section-heading mb-4">Home Visits</h2>
             <p className="section-subheading mx-auto mb-10">
-              Choose what works best for you. Extended health plan reimbursement may apply.
+              We bring professional foot care directly to your door. Extended health plan reimbursement may apply.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            {[
-              {
-                title: 'In-Office Visit',
-                desc: 'Full medical pedicure at our clinic.',
-                features: ['Nail trimming & thinning', 'Callus & corn care', 'Fungal assessment', 'Health history review'],
-                cta: 'Book In-Office', primary: false,
-                img: images.nurse1,
-              },
-              {
-                title: 'Home Visit',
-                desc: 'We bring the full clinic experience to your home.',
-                features: ['All in-office services', 'Travel to your home', 'Flexible scheduling', 'Ideal for seniors'],
-                cta: 'Book Home Visit', primary: true,
-                img: images.nurse2,
-              },
-            ].map((p, i) => (
-              <div key={i} className={`reveal card p-7 text-left relative ${p.primary ? 'ring-2 ring-teal-500' : ''}`} style={{ transitionDelay: `${i * 0.1}s` }}>
-                {p.primary && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-600 text-white text-xs font-semibold px-4 py-1 rounded-full">
-                    Popular
-                  </div>
-                )}
-                <div className="relative h-32 rounded-xl overflow-hidden mb-5">
-                  <Image src={p.img} alt={p.title} fill className="object-cover" sizes="300px" />
-                  <div className="absolute inset-0 bg-teal-900/30" />
-                </div>
-                <h3 className="font-bold text-slate-800 text-lg mb-2">{p.title}</h3>
-                <p className="text-sm text-slate-500 mb-4">{p.desc}</p>
-                <ul className="space-y-2 mb-6">
-                  {p.features.map(f => (
-                    <li key={f} className="flex items-center gap-2 text-sm text-slate-600">
-                      <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />{f}
-                    </li>
-                  ))}
-                </ul>
-                <Link href="/contact" className={p.primary ? 'btn-primary w-full justify-center' : 'btn-outline w-full justify-center'}>
-                  {p.cta}
-                </Link>
+          <div className="max-w-md mx-auto">
+            <div className="reveal card p-7 text-left relative ring-2 ring-teal-500">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-600 text-white text-xs font-semibold px-4 py-1 rounded-full">
+                Available Now
               </div>
-            ))}
+              <div className="relative h-32 rounded-xl overflow-hidden mb-5">
+                <Image src={images.nurse2} alt="Home Visit" fill className="object-cover" sizes="300px" />
+                <div className="absolute inset-0 bg-teal-900/30" />
+              </div>
+              <h3 className="font-bold text-slate-800 text-lg mb-2">Home Visit</h3>
+              <p className="text-sm text-slate-500 mb-4">We bring the full clinic experience to your home.</p>
+              <ul className="space-y-2 mb-6">
+                {['Nail trimming & thinning', 'Callus & corn care', 'Fungal assessment', 'Travel to your home', 'Flexible scheduling', 'Ideal for seniors'].map(f => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-slate-600">
+                    <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0" />{f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact" className="btn-primary w-full justify-center">
+                Book Home Visit
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -449,7 +430,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-5 text-center reveal">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready for healthier feet?</h2>
           <p className="text-teal-100 text-lg mb-8 max-w-xl mx-auto">
-            Call us or book online today. In-office and home visits available — no referral needed.
+            Call us or book online today. Home visits available — no referral needed.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary !bg-white !text-teal-700 hover:!bg-teal-50 shadow-xl">

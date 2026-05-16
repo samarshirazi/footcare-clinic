@@ -114,9 +114,8 @@ const services = [
     badge: 'Specialist Care',
     badgeColor: 'bg-rose-600',
     iconColor: 'bg-rose-50 text-rose-500',
-    desc: 'People with diabetes face a significantly higher risk of foot complications including neuropathy, poor circulation, ulcers, and infection. Our nurse has specialized training in diabetic foot assessment and care, following evidence-based protocols to prevent serious complications.',
+    desc: 'People with diabetes face a significantly higher risk of foot complications including neuropathy, poor circulation, ulcers, and infection. Nurse has specialized training in diabetic foot assessment and care, following evidence-based protocols to prevent serious complications.',
     includes: [
-      'ABPI circulatory screening test',
       'Neuropathy assessment',
       'Vascular and skin integrity check',
       'Safe nail and skin care',
@@ -134,11 +133,10 @@ const services = [
     badge: 'Soothing Relief',
     badgeColor: 'bg-cyan-600',
     iconColor: 'bg-cyan-50 text-cyan-600',
-    desc: 'Cracked heels can progress from a cosmetic concern to a painful, infection-prone condition. Our nurse carefully debrides thickened heel skin, applies professional-strength moisturizers, and provides guidance on preventing recurrence.',
+    desc: 'Cracked heels can progress from a cosmetic concern to a painful, infection-prone condition. Nurse carefully debrides thickened heel skin, applies professional-strength moisturizers, and provides guidance on preventing recurrence.',
     includes: [
       'Heel and sole assessment',
       'Debridement of thick/dry skin',
-      'Pumice and filing',
       'Professional emollient application',
       'Footwear and lifestyle advice',
       'Home care product recommendations',
@@ -154,7 +152,7 @@ const services = [
     iconColor: 'bg-indigo-50 text-indigo-600',
     desc: 'For patients who cannot easily travel — including seniors, those with limited mobility, post-surgical patients, or individuals with chronic illness — we offer full foot care nursing services delivered right to your door. We bring sterile, professional equipment to your home.',
     includes: [
-      'All medical pedicure services',
+      'All Medical Footcare Services',
       'Fully sterile portable kit',
       'Flexible scheduling',
       'Surrey, White Rock, Langley, North Delta, Vancouver',
@@ -285,7 +283,7 @@ export default function ServicesPage() {
             <div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">Extended Health Plan Coverage</h3>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Many extended health benefit plans include coverage for nursing foot care services. Since our practitioner is a licensed nurse (RN or LPN), our services may qualify for reimbursement under nursing care benefits. We recommend checking with your benefits provider before your appointment.
+                Many extended health benefit plans include coverage for nursing foot care services. Since our practitioner is a licensed nurse, our services may qualify for reimbursement under nursing care benefits. We recommend checking with your benefits provider before your appointment.
               </p>
               <p className="text-sm text-slate-500">
                 We can provide detailed receipts for insurance claims. A referral from your doctor is <strong>not required</strong> to book with us, but may help with certain insurance submissions.
@@ -299,7 +297,7 @@ export default function ServicesPage() {
       <section className="py-16 bg-teal-700">
         <div className="max-w-3xl mx-auto px-5 text-center reveal">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to book your appointment?</h2>
-          <p className="text-teal-100 mb-8">Call us or fill out our booking form. In-office and home visits available — no referral required.</p>
+          <p className="text-teal-100 mb-8">Call us or fill out our booking form. Home visits available — no referral required.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary !bg-white !text-teal-700 hover:!bg-teal-50">
               Book Online <ArrowRight className="w-4 h-4" />

@@ -36,12 +36,12 @@ const values = [
   {
     icon: BookOpen,
     title: 'Continuing Education',
-    desc: 'Our nurse stays current with the latest foot care techniques, technology, and evidence-based practices through ongoing training and professional development.',
+    desc: 'Nurse stays current with the latest foot care techniques, technology, and evidence-based practices through ongoing training and professional development.',
   },
   {
     icon: Award,
     title: 'Professional Standards',
-    desc: 'Our nurse is registered with the BC College of Nurses and Midwives and meets the standards set by the Lower Mainland Foot Care Nurses Association.',
+    desc: 'Nurse is registered with the BC College of Nurses and Midwives and meets the standards set by the Lower Mainland Foot Care Nurses Association.',
   },
 ]
 
@@ -90,7 +90,7 @@ export default function AboutPage() {
             About Nirvana Foot Care
           </h1>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Our nurse has been caring for Vancouver feet since 2010.
+            We believe everyone deserves professional, clinical-level foot care delivered with compassion. Nurse has been caring for Vancouver feet since 2010.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 Our founders believed that nursing foot care — performed by a licensed nurse to clinical standards — was the answer. They established a clinic that combined hospital-grade sterilization with the warmth and accessibility of a community health practice.
               </p>
               <p>
-                Today, we serve thousands of patients across Greater Vancouver, both in our clinic and through our in-home nursing visit program. We continue to invest in the latest technology — including ToeFX fungal treatment and Onyfix nail bracing — to give our patients the most effective options available.
+                Today, we serve thousands of patients across Greater Vancouver through our in-home nursing visit program. We continue to invest in the latest techniques and equipment to give our patients the most effective foot care options available.
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function AboutPage() {
             </div>
             <h2 className="section-heading">Fully Qualified & Certified</h2>
             <p className="section-subheading mx-auto">
-              Our nurse maintains active registration with the BC College of Nurses and Midwives and holds additional certifications in advanced foot care techniques.
+              Nurse maintains active registration with the BC College of Nurses and Midwives and holds additional certifications in advanced foot care techniques.
             </p>
           </div>
 
@@ -204,7 +204,7 @@ export default function AboutPage() {
 
           <div className="mt-8 p-5 bg-white border border-teal-100 rounded-2xl reveal">
             <p className="text-sm text-slate-600 text-center leading-relaxed">
-              <span className="font-semibold text-teal-700">Lower Mainland Foot Care Nurses Association</span> — Our nurse meets the professional standards, ethical code, and best practice guidelines set by this association. We are committed to the advancement of nursing foot care in British Columbia.
+              <span className="font-semibold text-teal-700">Lower Mainland Foot Care Nurses Association</span> — Nurse meets the professional standards, ethical code, and best practice guidelines set by this association. We are committed to the advancement of nursing foot care in British Columbia.
             </p>
           </div>
         </div>
@@ -213,8 +213,8 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-16 bg-slate-800">
         <div className="max-w-3xl mx-auto px-5 text-center reveal">
-          <h2 className="text-3xl font-bold text-white mb-4">Come meet our nurse</h2>
-          <p className="text-slate-400 mb-8">Book an appointment at our clinic or arrange an in-home nursing visit.</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Come meet the nurse</h2>
+          <p className="text-slate-400 mb-8">Book an in-home nursing visit today.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary">
               Book an Appointment <ArrowRight className="w-4 h-4" />
